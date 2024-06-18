@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ballu {
+            0%{
+                transform: translate(20px,20px);
+                border-radius: 100%;
+                
+              
+            }
+            10%{
+                transform: translate(80px,80px);
+                border-radius: 100%;
+                background-color:brown;
+
+            }
+            30%{
+                transform: translate(90px,90px);
+                border-radius: 100%;
+                background-color: rgb(25, 84, 214);
+              
+            }
+            60%{
+                transform: translate(100px,100px);
+                border-radius: 100%;
+                background-color: rgb(220, 155, 4);
+
+            }
+            80%{
+                transform: translate(120px,120px);
+                border-radius: 100%;
+                background-color: rgb(62, 237, 39);
+              
+            }
+            100%{
+                transform: translate(30px,30px);
+                border-radius: 100%;
+                background-color: yellow;
+
+            }
+            
+        }
+        div{
+                margin-top: 40px;
+                background-color: blue;
+                height: 50px;
+                width: 60px;
+                /* animati delay iteration-count direction fill-mode; */
+                animation-name: ballu;
+                animation-duration: 1s;
+                animation-direction:reverse;
+                animation-iteration-count:infinite;
+            }
+            p{
+                border: 3px solid black;
+                margin: 120px;
+            }
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <p></p>
+</body>
+</html>

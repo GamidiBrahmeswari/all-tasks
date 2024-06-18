@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traffic Signal UI</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        /* margin-left: -30px; */
+    }
+
+    .traffic-signal {
+        width: 250px;
+        height: 550px;
+        border: 10px solid #333;
+        border-radius: 40%;
+        background-color: black;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .light {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .red {
+        background-color: red;
+        top: 50px;left: 50px ;
+    }
+
+    .yellow {
+        background-color: yellow;
+        top: 190px;left: 50px
+    }
+
+    .green {
+        background-color: green;
+        top: 340px;left:50px
+    }
+</style>
+</head>
+<body>
+<div class="traffic-signal">
+    <div class="light red" ></div>
+    <div class="light yellow"></div>
+    <div class="light green" ></div>
+</div>
+</body>
+</html>

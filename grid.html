@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridlayout</title>
+    <style>
+      .lay{
+        display: grid;
+        background-color:blueviolet;
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns:100px 100px 100px 100px;
+        grid-template-rows:50px 50px 50px  50px;
+        grid-auto-rows:50px;
+        justify-content: center;
+      }
+      .g{
+        background-color: palevioletred;
+        text-align:center;
+      }
+      .e1{
+        grid-row:1/4 ;
+      }
+      .e8{
+        grid-column: 1/2;
+        grid-row:4/7;
+        /* grid-template-rows:40px ! ; */
+      }
+      .e5{
+         /* grid-column: ;  */
+        grid-row: 2/4;
+      }
+      .e6{
+        grid-row: 2/4;
+      }
+      .e7{
+        grid-row: 2/4;
+      }
+      .e9{
+        /* grid-column: ; */
+        grid-row:4/7 ;
+    }
+      .e10{
+        grid-row:4/7 ;
+      }
+      .e11{grid-row:4/7;
+    }
+
+      
+    </style>
+</head>
+<body>
+    <div class="lay">
+        <div class="g e1">1</div>
+        <div class="g e2">2</div>
+        <div class="g e3">3</div>
+        <div class="g e4">4</div>
+        <div class="g e5">5</div>
+        <div class="g e6">6</div>
+        <div class="g e7">7</div>
+        <div class="g e8">8</div>
+        <div class="g e9">9</div>
+        <div class="g e10">10</div>
+        <div class="g e11">11</div>
+    </div>
+</body>
+</html>

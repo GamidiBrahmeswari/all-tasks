@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Information</title>
+        <style>
+            [class="details"]{
+                border: 3px solid blue;
+            }
+            [class="Prof"]{
+                border: 3px solid rgb(149, 12, 37);
+            }
+            [class="Education"]{
+                border: 3px solid cyan;
+            }
+            [class="submit"]{
+                position: center;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+
+            }
+        </style>
+    </head>
+    <body>
+        <form> <center><h1>Registration Form </h1>
+
+                <h3>Fill Your Personal details</h3></center><input type="search"
+                id="srch" size="150" text align="right">
+            <label for="srch" text align="right"><strong>Search</strong></label>
+            <fieldset class="details" style="color: black;"><legend><strong>Personal  Details</strong></legend>
+                <lable  for="fname" id="details">First Name</lable>
+                <input type="text" id="details" name="fname" required>
+                <lable for="mname">Middle Name</lable>
+                <input type="text" id="details" name="mname">
+                <lable for="lname">Last Name</lable>
+                <input type="text" id="details" name="lname" required><br><br>
+                <lable for="lname">Father Name</lable>
+                <input type="text" id="details" name="lname" required>
+                <lable for="lname">Mother Name</lable>
+                <input type="text" id="details" name="lname" required>
+                <!-- <button type="submit">submit</button> -->
+
+                <p>Enter Your Gender:</p>
+                <input type="radio" id="male" name="Gender" required>
+                <lable for="male">Male</lable>
+                <input type="radio" id="Female" name="Gender" required>
+                <lable for="Female">Female</lable>
+                <input type="radio" id="Others" name="Gender" required>
+                <lable for="Others">Others</lable><br>
+
+                <lable for="add">Address</lable><br>
+                <input type="text" id="add" size="150"><br><br>
+                <lable for="city">City</lable>
+                <input type="text" id="city">
+                <lable for="pin">Pincode</lable>
+                <input type="number" id="pin">
+
+            </fieldset>
+
+            <fieldset class="Education">
+                <legend style="color: red;"><strong>Education</strong></legend>
+                <p>Select Your Highest Level Of Education:</p>
+                <input type="radio" id="pg" name="Education" required>
+                <lable for="pg">PG</lable>
+                <input type="radio" id="ug" name="Education" required>
+                <lable for="ug">UG</lable>
+                <input type="radio" id="ten" name="Education" required>
+                <lable for="ten">10+2</lable><br><br>
+                <label for="degree">Mention Your Education Details:</label>
+                <input type="text" id="degree">
+                <label for="clg">College Name</label>
+                <input type="text" id="clg">
+
+                <lable for="per">Percentage </lable>
+                <input type="number" id="per" name="per" required>
+                <lable for="pass">Passed Out</lable>
+                <input type="date" id="pass">
+            </fieldset>
+
+            <fieldset class="Prof">
+                <legend style="color: blue;"><strong>Proffesional Details</strong></legend>
+                <label for="Img">Upload Your Image</label><br>
+                <input type="file" id="Img" single accept="image/*"><br><br>
+
+                <label for="Govt">UplOad Your Id Proof</label><br>
+                <input type="file" id="govt"><br><br>
+
+                <label for="res">UplOad Your Resume</label><br>
+                <input type="file" id="res" single accept=".pdf"><br><br>
+
+                <p>Work Experience</p>
+                <input type="checkbox" id="vehicle1" name="Exp" value="Bike">
+                <label for="vehicle1"> Fresher</label><br>
+                <input type="checkbox" id="vehicle2" name="Exp" value="Car">
+                <label for="vehicle2"> Experienced</label><br>
+                <label for="Expp">Mention Your Work Experience If You are
+                    Experienced</label>
+                <input type="text" id="Expp" size="150">
+
+            </fieldset>
+           <button  class="submit" type="submit"
+                    formaction="./Registerd .html">Submit</button> <input
+                    type="reset">
+
+        </form>
+
+        <!-- <input type="reset"> -->
+
+    </body>
+</html>

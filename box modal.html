@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rectangles with Different Border Colors</title>
+<style>
+   div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+    .rectangle1 {
+        width: 300px;
+        height: 200px;
+        border: 10px solid red;
+        margin: 20px;
+        position: relative;
+    }
+    
+    .rectangle2 {
+        width: 260px;
+        height: 160px;
+        border: 10px solid blue;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .rectangle3 {
+        width: 220px;
+        height: 120px;
+        border: 10px solid green;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .rectangle4 {
+        width: 180px;
+        height: 80px;
+        border: 10px solid yellow;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+</style>
+</head>
+<body>
+<div>
+    <div class="rectangle rectangle1">
+        <div class="rectangle rectangle2">
+            <div class="rectangle rectangle3">
+                <div class="rectangle rectangle4"></div>
+            </div>
+        </div>
+    </div>  
+</div>
+</body>
+</html>

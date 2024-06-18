@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        @media screen and (max-width:700px) {
+            .main1 {
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                grid-template-rows: repeat(8, 1fr);
+                border: 1px solid black;
+                height: 80vh;
+                width: 90vw;
+            }
+
+            .main1>.child1:nth-child(odd) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child1:nth-child(even) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child2:nth-child(even) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child2:nth-child(odd) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child3:nth-child(odd) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child3:nth-child(even) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child4:nth-child(even) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child4:nth-child(odd) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child5:nth-child(odd) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child5:nth-child(even) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child6:nth-child(even) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child6:nth-child(odd) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child7:nth-child(odd) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child7:nth-child(even) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child8:nth-child(even) {
+                background-color: rgb(7, 7, 7);
+                height: 100px;
+                /* width: 100px; */
+            }
+
+            .main1>.child8:nth-child(odd) {
+                background-color: white;
+                height: 100px;
+                /* width: 100px; */
+            }
+        }
+
+        .main1 {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            border: 1px solid black;
+            height: 800px;
+            width: 900px;
+        }
+
+        .main1>.child1:nth-child(odd) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child1:nth-child(even) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child2:nth-child(even) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child2:nth-child(odd) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child3:nth-child(odd) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child3:nth-child(even) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child4:nth-child(even) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child4:nth-child(odd) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child5:nth-child(odd) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child5:nth-child(even) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child6:nth-child(even) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child6:nth-child(odd) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child7:nth-child(odd) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child7:nth-child(even) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child8:nth-child(even) {
+            background-color: rgb(7, 7, 7);
+            height: 100px;
+            /* width: 100px; */
+        }
+
+        .main1>.child8:nth-child(odd) {
+            background-color: white;
+            height: 100px;
+            /* width: 100px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main1">
+        <div class="child1"><img src="./bishop.png" alt="" height="100"></div>
+        <div class="child1"><img src="./knight.png" alt="" height="100"></div>
+        <div class="child1"><img src="./queen.png" alt="" height="100"></div>
+        <div class="child1"><img src="./king (1).png" alt="" height="100"></div>
+        <div class="child1"><img src="./rook.png" alt="" height="100"></div>
+        <div class="child1"><img src="./bishop.png" alt="" height="100"></div>
+        <div class="child1"><img src="./knight.png" alt="" height="100"></div>
+        <div class="child1"><img src="./knight.png" alt="" height="100"></div>
+
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child2"><img src="./pawn.png" alt="" height="100"></div>
+
+        <div class="child3"></div>
+        <div class="child3"></div>
+        <div class="child3"></div>
+        <div class="child3"></div>
+        <div class="child3"></div>
+        <div class="child3"></div>
+        <div class="child3"></div>
+        <div class="child3"></div>
+
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+        <div class="child4"></div>
+
+        <div class="child5"></div>
+        <div class="child5"></div>
+        <div class="child5"></div>
+        <div class="child5"></div>
+        <div class="child5"></div>
+        <div class="child5"></div>
+        <div class="child5"></div>
+        <div class="child5"></div>
+
+        <div class="child6"></div>
+        <div class="child6"></div>
+        <div class="child6"></div>
+        <div class="child6"></div>
+        <div class="child6"></div>
+        <div class="child6"></div>
+        <div class="child6"></div>
+        <div class="child6"></div>
+
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+        <div class="child7"><img src="./pawn.png" alt="" height="100"></div>
+
+        <div class="child8"><img src="./queen.png" alt="" height="100"></div>
+        <div class="child8"><img src="./knight.png" alt="" height="100"></div>
+        <div class="child8"><img src="./bishop.png" alt="" height="100"></div>
+        <div class="child8"><img src="./queen.png" alt="" height="100"></div>
+        <div class="child8"><img src="./king (1).png" alt="" height="100"></div>
+        <div class="child8"><img src="./rook.png" alt="" height="100"></div>
+        <div class="child8"><img src="./knight.png" alt="" height="100"></div>
+        <div class="child8"><img src="./bishop.png" alt="" height="100"></div>
+    </div>
+
+</body>
+
+</html>
