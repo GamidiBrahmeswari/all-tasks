@@ -1,0 +1,31 @@
+1. What is the value of type of type of true?
+
+String(true is a type of Boolean and it is type of string)
+
+2. What is the result of null == undefined?
+
+True(null is a empty value and undefined has no value)
+
+3. What is the value of +''?
+
+0 (an operator converts an empty string to a number)
+
+4. What is the result of [] == false?
+
+True /*(an empty array is zero and false is zero)*/
+
+5. What is the value of {} + {}?
+
+[object object][object object] (because it is the object)
+
+6. What is the value of type of 42n?
+
+Big int(42n is the bigint)
+
+7. What is the result of "" == false?
+
+True(empty string changes to false )
+
+8. What is the value of Boolean("0")?
+
+True(non-empty string is always true)
