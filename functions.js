@@ -23,6 +23,7 @@ function demo(a, b) {
   }
   
   console.log(demo3(5, 3));
+  console.log(demo3(5, 3));
   
   ////////////////////////////////////////////////////////////////////
 //   square of 2 numbers
