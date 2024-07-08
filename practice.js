@@ -99,8 +99,26 @@
 // let index=str.search("w");
 // console.log(index)
 
-let text = "the rain in SPAIN stays mainly in the plain "
-text.match(/ain/gi);
+// let text = "the rain in SPAIN stays mainly in the plain "
+// text.match(/ain/gi);
+function ahello() {
+    var a = "variable inside a outer function";
+
+
+    function ahi() {
+      var b = "varaible inside inner function";
+      console.log(a);
+      console.log(b);
+
+
+    }
+    ahi();
+  }
+  ahello();
+
+   var g=[1,5,3,6,9,2];
+   g.sort()
+   console.log(g)
 
 
 
